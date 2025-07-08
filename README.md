@@ -9,15 +9,14 @@ A fully responsive quiz application built using Python's Flask framework for the
 
 ## 📚 Table of Contents
 
-1. [About the Project](#about-the-project)
-   - [Built With](#built-with)
-2. [Getting Started](#getting-started)
-   - [Prerequisites](#prerequisites)
-   - [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
-6. [Contact](#contact)
+1. [About the Project](#💡-about-the-project)
+2. [Features](#✅-features)
+3. [Built With](#🛠️-built-with)
+4. [Getting Started](#🚀-getting-started)
+5. [Usage](#💻-usage)
+6. [Contributing](#🤝-contributing)
+7. [License](#📄-license)
+8. [Contact](#📬-contact)
 
 ---
 
@@ -25,7 +24,9 @@ A fully responsive quiz application built using Python's Flask framework for the
 
 This is a simple yet powerful Flask-based Quiz Application. It allows users to register, take quizzes, see their scores instantly, and compete with other users for the highest score.
 
-### ✅ Features
+---
+
+## ✅ Features
 
 - 🔐 Login & Registration
 - 🔁 Retake quizzes
@@ -34,16 +35,6 @@ This is a simple yet powerful Flask-based Quiz Application. It allows users to r
 - 💾 Uses SQLite for local data storage
 - 📱 Responsive front-end layout
 
-### 🐞 Known Issues
-
-- No major bugs currently reported
-
-### 🔭 Future Improvements
-
-- Admin panel to manage questions and users
-- Enhanced dashboard with analytics
-- Timer & scoring based on speed
-
 ---
 
 ## 🛠️ Built With
@@ -51,36 +42,54 @@ This is a simple yet powerful Flask-based Quiz Application. It allows users to r
 - [Python](https://www.python.org/)
 - [Flask](https://flask.palletsprojects.com/)
 - Basic HTML & CSS
+- SQLAlchemy + Alembic for migrations
 
 ---
 
 ## 🚀 Getting Started
 
+Follow these instructions to get the project running on your local machine.
+
 ### 📋 Prerequisites
 
-Ensure you have the following installed:
+Make sure you have:
 
-- [Python 3.6+](https://www.python.org/downloads/)
-- pip
+- Python 3.6+
+- pip (Python package manager)
+- Git
 - virtualenv (optional but recommended)
 
-### ⚙️ Installation
+---
+
+### ⚙️ Installation Steps
 
 ```bash
-# Clone this repository
+# 1. Clone the repository
 git clone https://github.com/MohamedSaad00/QuizApp.git
-
-# Navigate into the project folder
 cd QuizApp
 
-# Create a virtual environment and activate it
-python3 -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
+# 2. Create a virtual environment and activate it
+python -m venv venv
+venv\Scripts\activate             # On Windows
+# OR
+source venv/bin/activate          # On Mac/Linux
 
-# Install all dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Run the Flask development server
+# 4. Set environment variables (for development)
+set FLASK_APP=app
+set FLASK_ENV=development
+# OR (Unix/macOS)
+export FLASK_APP=app
+export FLASK_ENV=development
+
+# 5. Run database migrations
+flask db init                    # Only the first time
+flask db migrate -m "Initial migration"
+flask db upgrade
+
+# 6. Start the app
 flask run
 ```
 
