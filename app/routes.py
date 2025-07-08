@@ -56,7 +56,8 @@ def login():
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
         if user is None or not user.check_password(form.password.data):
-            return redirect(url_for('login'))
+            flash('Invalid username or password. Please register if you do not have an account.')
+            return render_template('login.html', form=form, title='Login')
         session['user_id'] = user.id
         session['marks'] = 0
         next_page = request.args.get('next')

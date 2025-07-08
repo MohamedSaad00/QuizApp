@@ -28,15 +28,15 @@
             {% endif %}
         </ul>
     </nav>
+        {% block content %}{% endblock %}
     {% with messages = get_flashed_messages() %}
     {% if messages %}
-    <ul>
+    <ul style="color: red; list-style: none; padding-left: 0;">
         {% for message in messages %}
         <li>{{ message }}</li>
         {% endfor %}
     </ul>
     {% endif %}
     {% endwith %}
-        {% block content %}{% endblock %}
     </body>
 </html>
