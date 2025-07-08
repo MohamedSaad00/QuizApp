@@ -1,103 +1,109 @@
 # Flask Quiz App
 
-A Fully responsive Quiz built using Python's Flask
+A fully responsive quiz application built using Python's Flask framework for the backend and basic HTML/CSS for the frontend.
 
- - [Report  Bug](https://github.com/thepasterover/flask-quiz-app/issues)
- - [Request Feature](https://github.com/thepasterover/flask-quiz-app/issues)
+- [Report a Bug](https://github.com/MohamedSaad00/QuizApp/issues)
+- [Request a Feature](https://github.com/MohamedSaad00/QuizApp/issues)
 
-Table of contents
-1. [About the project](#about-the-project)
-    - [Built With](#built-with)
+---
+
+## 📚 Table of Contents
+
+1. [About the Project](#about-the-project)
+   - [Built With](#built-with)
 2. [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
 3. [Usage](#usage)
 4. [Contributing](#contributing)
 5. [License](#license)
 6. [Contact](#contact)
 
-## About the Project
+---
 
-Preview:
+## 💡 About the Project
 
+This is a simple yet powerful Flask-based Quiz Application. It allows users to register, take quizzes, see their scores instantly, and compete with other users for the highest score.
 
-https://user-images.githubusercontent.com/50194033/118162704-adb19300-b43e-11eb-9399-279b4fa2afef.mp4
+### ✅ Features
 
+- 🔐 Login & Registration
+- 🔁 Retake quizzes
+- 📊 View scores immediately
+- 🏆 Leaderboard (highest score by user)
+- 💾 Uses SQLite for local data storage
+- 📱 Responsive front-end layout
 
-This project is a fully responsive Quiz App built using Python's Flask for the backend and custom HTML CSS for the frontend.
+### 🐞 Known Issues
 
-Features:
-- Login and Register to give a test
-- Option to retake a test
-- View Your scores immediately
-- View the highest score by your peers
-- Add Work done by an employee for today
-- Uses SQLite for faster performance
+- No major bugs currently reported
 
-Known Bugs:
-- Nothing so far!
+### 🔭 Future Improvements
 
-Future Scope:
-- Build a entire site for the test taker to arrange question and marks respectively.
-- Dynamic Highest Score visibilit
+- Admin panel to manage questions and users
+- Enhanced dashboard with analytics
+- Timer & scoring based on speed
 
-## Built With
+---
+
+## 🛠️ Built With
+
 - [Python](https://www.python.org/)
-- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-- Basic HTML and CSS
+- [Flask](https://flask.palletsprojects.com/)
+- Basic HTML & CSS
 
-## Getting Started
+---
 
-### Prerequisites
+## 🚀 Getting Started
 
-- Python: [Python Installation](https://www.python.org/downloads/)
-- Flask: [Flask installation](https://flask.palletsprojects.com/en/2.0.x/installation/)
+### 📋 Prerequisites
 
-## Installation
+Ensure you have the following installed:
 
+- [Python 3.6+](https://www.python.org/downloads/)
+- pip
+- virtualenv (optional but recommended)
+
+### ⚙️ Installation
 
 ```bash
-# clone this repo
-$ git clone https://github.com/thepasterover/flask-quiz-app.git
+# Clone this repository
+git clone https://github.com/MohamedSaad00/QuizApp.git
 
-# go to the directory
-$ cd flask-quiz-app
+# Navigate into the project folder
+cd QuizApp
 
-# use virtual env if you want
-$ virtualenv ENV && source ENV/bin/activate
+# Create a virtual environment and activate it
+python3 -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
 
-# generate static project
-$ pip install -r requirements.txt
+# Install all dependencies
+pip install -r requirements.txt
 
-# export flask app and run
-$ set FLASK_APP=main.py
-$ flask run
-
-# generate static project
-$ npm run generate
+# Run the Flask development server
+flask run
 ```
 
+## 💻 Usage
 
-## Usage
+This app is ideal for schools, educators, or internal company training tools. Users register, take tests, and get immediate feedback with a competitive leaderboard experience.
 
-This project can be setup and used by small to medium sized schools and classes.
+## 🤝 Contributing
 
-## Contributing
+Contributions make the community stronger! To contribute:
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+1. Fork the repository
+2. Create your branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to your branch (`git push origin feature/AmazingFeature`)
+5. Create a new Pull Request
 
-1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
+## 📄 License
 
-## License
-Distributed under the MIT License. See LICENSE for more information.
+This project is licensed under the MIT License. See the `LICENSE` file for more info.
 
-## Contact
+## 📬 Contact
 
-Name: Boobalan Shettiyar - boopalanshettiyar78@gmail.com
-ProjectLink: https://github.com/thepasterover/flask-quiz-app
-
-
+**Name:** Mohamed Saad  
+**GitHub:** [MohamedSaad00](https://github.com/MohamedSaad00)  
+**Project Link:** [QuizApp](https://github.com/MohamedSaad00/QuizApp)
