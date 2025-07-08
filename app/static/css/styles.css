@@ -52,12 +52,11 @@ nav {
 .home-img{
     width: auto;
     height: 525px;
-    border-radius: 50%;
     margin-right: 20px;
 }
 
 .home-div {
-    background-color: #71baed;
+    background-color: #76c0f8;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,7 +108,7 @@ nav {
 }
 
 .login-img {
-    width: 61%;
+    width: 50%;
     height: auto;
     margin-top: 20px;
 }
