@@ -149,3 +149,4 @@ instance/
 
 # macOS and system files
 .DS_Store
+.vscode
