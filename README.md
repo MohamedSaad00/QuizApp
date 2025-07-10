@@ -79,10 +79,10 @@ pip install -r requirements.txt
 
 # 4. Set environment variables (for development)
 set FLASK_APP=app
-set FLASK_ENV=development
+set FLASK_DEBUG=1
 # OR (Unix/macOS)
 export FLASK_APP=app
-export FLASK_ENV=development
+export FLASK_DEBUG=1
 
 # 5. Run database migrations
 flask db init                    # Only the first time
