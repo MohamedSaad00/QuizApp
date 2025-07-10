@@ -24,9 +24,11 @@ A fully responsive quiz application built using Python's Flask framework for the
 
 This is a simple yet powerful Flask-based Quiz Application. It allows users to register, take quizzes, see their scores instantly, and compete with other users for the highest score.
 
-### 📹 Tutorial Video
+## 📽️ Project Demo Video
 
-Watch this simple guide on how to use the Quiz App: [YouTube Tutorial](https://youtu.be/vpatgXiygQ8)
+Watch the full demo here:
+
+➡️ [Click to Watch on YouTube](https://youtu.be/vpatgXiygQ8)
 
 ---
 
